@@ -1,8 +1,148 @@
 <!DOCTYPE html>
 <html>
-<bodystyle="background-color:lightgrey">
-h1 {color:#004D40;text-align:center;}
-<h1 color=#004D40 style="font-family:Monospace">Hello World!</h1>
-<p style="font-family:Monospace">Test print!</p>
+<style>
+div {
+	margin-left: 510px;
+	margin-top: 10px;
+	width: 860px;
+	text-align: center;
+	font-family: "Courier New", Courier, monospace;
+	padding: 10px;
+	border: 10px solid #5EA782;
+}
+div.photo {
+	max-width: 400px;
+	max-height: 300px;
+	margin: 10px;
+	padding: 10px;
+	border: 10px solid #42755B;
+	position: relative;
+	left: 1430px;
+	top: -900px;
+}
+div.absolute {
+	max-width: 360px;
+	max-height: 300px;
+	margin: 10px;
+	padding: 10px;
+	border: 10px solid #42755B;
+	position: absolute;
+	top: 350px;
+	left: 0px;
+}
+div.left {
+	max-width: 400px;
+	max-height: 900px;
+	margin: 10px;
+	padding: 10px;
+	border: 10px solid #7EE5B2;
+	position: absolute;
+	right: 1390px;
+	top: 120px;
+}
+div.disclaimer {
+	position: relative;
+	left: -1430px;
+	max-width: 400px;
+	text-align: center;
+	padding: 10px;
+	border: 10px solid #42755B;
+	margin: 0px;
+}
+div.js {
+	position: relative;
+	left: -1430px;
+	top: -895px;
+	max-width: 400px;
+	padding: 10px;
+	border: 10px solid #42755B;
+	margin: 0px;
+}
+p {
+	font-family: "Courier New", Courier, monospace;
+	font-size: 20px;
+	text-align: center;
+}
+p.left {
+	font-size: 18px;
+	text-align: left;
+}
+p.small {
+	font-size: 15px;
+	text-align: center;
+}
+h1 {
+	margin-left: 510px;
+	width: 900px;
+	color: #00291F;
+	background-color: #73CFA0;
+	font-family: "Courier New", Courier, monospace;
+	text-align: center;
+	font-size: 50px;
+}
+body {
+	background-color: #E8FAF2;
+}
+</style>
+<body>
+<h1>Robert Kaucic
+	<p>Student at the University of Illinois at Urbana-Champaign</p>
+</h1>
+<div>
+	<p>Welcome to my first website! Here you'll get to learn a bit about me and explore the things I did when I barely knew what HTML and CSS were. Apparently I really liked the cool-teal color scheme.I may or may not update this page over time but I certainly hope I can do better than using GitHub Pages and editing a .html file in Sublime eventually. <a href="https://upload.wikimedia.org/wikipedia/en/7/77/League_of_Legends_logo.png">Here</a> are some <a href="https://doctorstrangeroll.files.wordpress.com/2012/09/dungeons-and-dragons-4th-edition-logo.jpg">links</a> to things I like, since, you know, a <a href="http://www.lsusathletics.com/images/2013-14/Cross_CountryNEW.jpg">picture</a> is worth a thousand words.</p>
+</div>
+<div>
+	<p style="text-align: center;">A short autobiography, in verse:</p>
+	<p style="text-align: center;">Born 'cross the sea in the UK, I came to the US the next day,</p>
+	<p style="text-align: center;">My dad; engineer, I learned math, you hear,</p>
+	<p style="text-align: center;">And joined the nerdy-kid fray.</p>
+	<p style="text-align: center;">I ran and played ball with the rest, And tried always to be the very best,</p>
+	<p style="text-align: center;">I got into games, Learned Swing with JFrames,</p>
+	<p style="text-align: center;">And when time came 'round, passed the test.</p>
+	<p style="text-align: center;">From then I was hooked on Comp Sci, Self-taught some Python to get by,</p>
+	<p style="text-align: center;">But I had to learn more, So I walked out the door,</p>
+	<p style="text-align: center;">And now, I am here, at UI.</p>
+</div>
+<div class="photo"><img src="RobertKaucic.jpg" style="width:400px;height:300px;" alt="RobertKaucic">
+	<div class="absolute">
+		<p>Interests and Activities</p>
+	</div>
+	<div class="absolute" style="position:relative;top:140px;margin:5px;border:5px solid #68917C;max-height:700px;z-index:-1;">
+		<p class="left">Coding:</p>
+		<p class="left" style="margin:10px;position:relative;left:25px;">Writes video games and applets.</p>
+		<p class="left">Gaming:</p>
+		<p class="left" style="margin:10px;position:relative;left:25px;">Plays online games with friends.</p>
+		<p class="left">Reading and Writing:</p>
+		<p class="left" style="margin:10px;position:relative;left:25px;">Avid fantasy reader and short story author.</p>
+		<p class="left">Athletics:</p>
+		<p class="left" style="margin:10px;position:relative;left:25px;">Runs, parkours, and plays racquetball.</p>
+</div>
+<div class="left">
+	<p class="left">FAQ about the site:</p>
+	<p class="left"><b>Q:</b>	Why did you make this site?</p>
+	<P class="left"><b>A:</b>	ENG 100 is an introductory engineering class at UIUC, and a basic website is the standard project.</p>
+	<p class="left"><b>Q:</b>	Why does it look like it's from the '90s?</p>
+	<p class="left"><b>A:</b>	Give me some credit it's at least early '00s. Also it's partly because I'm a computer scientist, not an artist, and partly because I had no prior experience with HTML/CSS while making it.</p>
+	<p class="left"><b>Q:</b>	Why did you put an FAQ here? Who would actually have questions about this site?</p>
+	<p class="left"><b>A:</b>	I thought the site was rather boring and thought some humor would brighten your day.</p>
+</div>
+<div class="disclaimer">
+		<p class="small">This website was made as a project for ENG 100 at UIUC.</p>
+		<p class="small">Special thanks to Suket Karnawat for teaching the course.</p>
+	</div>
+<script>
+	function clickMe() {
+		if(document.getElementById("test").style.fontSize == "22px") {
+			document.getElementById("test").style.fontSize = "20px";
+		}
+		else {
+			document.getElementById("test").style.fontSize = "22px";
+		}
+	}
+</script>
+<div class="js">
+	<button type="button" onclick="clickMe()">Obligatory JavaScript Demo</button>
+	<p id="test">This text can change size!</p>
+</div>
 </body>
 </html>
